@@ -1,0 +1,40 @@
+.selectColor {
+  height: 20px;
+  border: 1px solid grey;
+  margin-top: 7px;
+  border-radius: 3px;
+}
+
+.price {
+  margin-top: 10px;
+}
+
+.counter {
+  margin-bottom: 10px;
+}
+
+.counterBtn {
+  width: 25px;
+  padding: 0px 5px;
+  margin: 0px 5px;
+}
+
+.card-image img {
+  max-height: 200px;
+}
+
+.remove-card {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: #c3b8b9;
+}
+
+.remove-card i.material-icons {
+  height: 20px;
+  line-height: 20px;
+}
+.remove-card:hover {
+  color: black;
+  cursor: pointer;
+}

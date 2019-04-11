@@ -1,0 +1,24 @@
+@import "footerMainContent.css";
+
+.page-footer {
+  background-color: darkgray;
+}
+
+.page-footer .input-field label  {
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  box-shadow: none;
+  border-bottom: 1px solid white;
+}
+
+input.invalid[type=email]:not(.browser-default) {
+  box-shadow: none;
+  border-bottom: 2px solid #ee6e73;
+}
+
+.page-footer .input-field input.validate:focus  {
+  border-bottom: 2px solid #ee6e73;
+}

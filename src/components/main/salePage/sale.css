@@ -1,0 +1,9 @@
+.sale {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.sale .present img {
+  height: 300px;
+  width: 300px;
+}

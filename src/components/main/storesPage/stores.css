@@ -1,0 +1,16 @@
+.stores {
+  text-align: center;
+  padding: 20px 10px;
+  color: #a58484;
+  mix-blend-mode: exclusion;
+}
+
+.stores a {
+  color: #a58484;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.stores a:hover {
+  color: #5e9e8e;
+}

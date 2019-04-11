@@ -1,0 +1,50 @@
+.dropdown {
+  height: 120px;
+  overflow: auto;
+  width: 100% !important;
+  position: absolute;
+  top: 51px !important;
+  left: 0px !important;
+  border-radius: 5px;
+}
+
+.header-bottom .nav-item .dropdown a {
+  color: black;
+}
+
+.naw-header-bottom-left {
+  overflow-x: scroll;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav-item .dropdown a {
+  display: block;
+  padding-left: 20px;
+}
+
+.nav-item .dropdown a:hover {
+  background-color: gainsboro;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav-item:hover {
+  background-color: #d86264;
+}
+
+.pin-top {
+  position: relative;
+}
+
+.pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
+  z-index: 1000;
+}

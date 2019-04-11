@@ -1,0 +1,12 @@
+.preloader-wrapper {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinner-red-only {
+  border-color: #d86264;
+}

@@ -1,0 +1,23 @@
+@import "./homePage/cardProduct.css";
+@import "../modalsIcons/modalSelectColor/modalSelectColor.css";
+@import "shoppingEndPaymentPage/shoppingEndPayment.css";
+@import "confidentialityPage/confidentiality.css";
+@import "salePage/sale.css";
+@import "storesPage/stores.css";
+@import "jobs/jobs.css";
+@import "mapPage/map.css";
+
+main .parallax-container {
+  height: 700px;
+  overflow: auto;
+}
+
+main .container {
+  max-height: 1000px;
+  min-height: 1000px;
+  overflow: auto;
+}
+
+.parallax img {
+  display: block;
+}

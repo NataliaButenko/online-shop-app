@@ -1,0 +1,99 @@
+@import "navbarTop.css";
+@import "pushpinWithNavbar.css";
+
+.header-top .nav-wrapper .container {
+  width: 80%;
+}
+
+header .header-top nav {
+  height: 30px;
+}
+
+header .header-top ul li a{
+  height: 30px;
+  line-height: 30px;
+}
+
+header .header-middle nav {
+  height: 250px;
+}
+
+header .header-middle ul li a{
+  height: 250px;
+  line-height: 250px;
+}
+
+header .parallax-container {
+  height: 250px;
+}
+
+.middle {
+  background: none;
+  z-index: 100;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+h4.header {
+  margin-top: 0px;
+}
+
+.section {
+  padding: 0px;
+}
+
+input#search {
+  border-bottom: 1px solid white;
+}
+
+nav .input-field label {
+  font-size: 1em;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  box-shadow: none;
+  border-bottom: 1px solid white;
+}
+
+div.input-field {
+  width: 120px;
+}
+
+.row .col.s6 {
+  width: 72%;
+}
+
+.header-bottom {
+  height: 100%;
+}
+
+.header-bottom .pushpin-demo-nav .pin-top {
+  top: 0px;
+}
+
+.number-item {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 19px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 17px;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.number-item span {
+  color: black;
+  font-weight: 600;
+}
+
+.mailto {
+  color: black;
+  cursor: pointer;
+}

@@ -1,0 +1,105 @@
+@import "horizontalCardForModal.css";
+
+.modal{
+  color: black;
+}
+
+.modal div.col {
+  width: 95%;
+  margin-left: 20px;
+}
+
+.modal .card {
+  line-height: 20px;
+  height: 160px;
+}
+
+.modal .card img {
+  height: 160px;
+  max-width: 160px;
+}
+
+.modal .card.horizontal .card-image img {
+  width: 100%;
+  max-width: 160px;
+}
+
+#modal {
+  max-height: 300px;
+}
+
+.modal-footer {
+  position: absolute;
+  bottom: 0px;
+}
+
+.modal-content {
+  overflow: auto;
+  padding: 0px;
+  height: 300px;
+}
+
+.productName {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal .card .card-content, .card-action {
+  padding: 10px 5px;
+}
+
+.modal .card-content {
+  overflow: auto;
+}
+
+.modal .col.s12 {
+  position: relative;
+}
+
+input[type=number]:not(.browser-default):focus:not([readonly]) {
+  box-shadow: none;
+  border-bottom: 2px solid #ee6e73;
+}
+
+input[type=number]:not(.browser-default):focus:not([readonly]) + label {
+  color: black;
+}
+
+input.valid[type=number]:not(.browser-default), input.valid[type=number]:not(.browser-default):focus {
+  color: #ee6e73;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+}
+
+.modal .validate {
+  color: black;
+}
+
+.modal .price {
+  margin-bottom: 5px;
+}
+
+.sum {
+  position: absolute;
+  top: 5px;
+  right: 45%;
+  color: #d86264;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.modalClose {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #9e9e9e;
+  cursor: pointer;
+}
+
+.modalClose:hover {
+  color: black;
+}
+
+.modalClose i.material-icons {
+  line-height: 20px;
+}

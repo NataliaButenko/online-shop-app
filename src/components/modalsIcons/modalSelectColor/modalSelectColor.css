@@ -1,0 +1,56 @@
+.modal-select-color-img {
+  width: 180px;
+  height: 180px;
+}
+
+.modalSelectColor span.product-color{
+  height: 25px;
+}
+
+.modalSelectColor [type="radio"]:checked + span:not(.lever):before {
+  top: -9px;
+  left: 23px;
+  border-right: 2px solid #d86264;
+  border-bottom: 2px solid #d86264;
+}
+
+.modalSelectColor [type="radio"]:not(:checked) + span, [type="radio"]:checked + span {
+  padding-left: 25px;
+}
+
+.modalSelectColor [type="radio"]:checked + span:not(.lever):before {
+  top: -6px;
+  left: 25px;
+  width: 12px;
+  height: 22px;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.modalSelectColor [type="radio"] + span:not(.lever):before, [type="radio"]:not(.filled-in) + span:not(.lever):after {
+  border-radius: 1px;
+  margin-top: 3px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.modalSelectColor [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: white;
+  opacity: 0;
+}
+
+.modalSelectColor [type="radio"]:not(:checked) + span:before, [type="radio"]:not(:checked) + span:after {
+  border: none;
+}
+
+.modalSelectColor p {
+  margin: 0px;
+}
+
+.modalSelectColor h5 {
+  margin-top: 0px;
+}

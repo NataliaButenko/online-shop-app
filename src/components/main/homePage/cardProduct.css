@@ -1,0 +1,46 @@
+.colors {
+  height: 50px;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.product-color {
+  height: 23px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px 5px;
+}
+
+.description {
+  height: 120px;
+  overflow: auto;
+}
+
+.card-content .card-title {
+  height: 95px;
+  overflow: auto;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main.card .card-action {
+  background-color: #ee6e73;
+}
+
+.main.card .card-action:hover {
+  background-color: #d86264;
+}
+
+.main.card .card-content {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.main .card-image {
+  height: 300px;
+}
+
+.main .card-image img {
+  max-height: 300px;
+}
