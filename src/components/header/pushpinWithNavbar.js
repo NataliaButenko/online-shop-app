@@ -10,7 +10,8 @@ export class PushpinWithNavbar extends Component {
     }
   }
 
-  showModal = () => {
+  showModal = (e) => {
+    e.preventDefault();
     this.setState({
       showModal: !this.state.showModal
     });
@@ -33,7 +34,7 @@ export class PushpinWithNavbar extends Component {
                 this.props.navbarProducts.map((value, index) => {
                   return(
                     <div className='nav-item' key={ index } onClick={ () => this.props.displayProductsByType(value) }>
-                      <a href="">{ value }</a>
+                      <a href="#">{ value }</a>
                     </div>
                   )
                 })
@@ -42,18 +43,17 @@ export class PushpinWithNavbar extends Component {
 
             <div className='right hide-on-med-and-down col s2'>
               <InputField classNameDiv='s6 search nav-item'
-                          classNameInput=' '
-                          classNameLabel='white-text'
                           placeholder=''
                           id='search'
                           type='text'
                           onChange={ this.props.search }
                           labelText='Search'
+                          labelColorText={ 'white' }
+                          validateColotText={ 'white' }
               />
 
               <div className='right nav-item ' onClick={ this.showModal }>
                 <a href="" ><i className="large material-icons">add_shopping_cart</i></a>
-
                 { this.props.displaySelectedItem() }
               </div>
             </div>

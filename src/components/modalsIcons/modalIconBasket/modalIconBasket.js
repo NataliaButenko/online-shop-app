@@ -7,7 +7,6 @@ import { HorizontalCardForModal } from "./horizontalCardForModal";
 import { history } from "../../main/main";
 import { increaseCounter, decreaseCounter } from "../../../store/actions/basketAction/chengeProductCounter";
 
-
 export class ModalIconBasketComponent extends Component {
   constructor() {
     super();
@@ -41,7 +40,7 @@ export class ModalIconBasketComponent extends Component {
       increaseCounter,
       decreaseCounter } = this.props;
 
-    //console.log(this.props);
+    //console.log('basket', basket);
     return (
       <div id="modal" className={ "modal" + (show && basket.length !== 0 ? ' showModal' : '') }>
         <div className='modal-content'>
@@ -70,7 +69,7 @@ export class ModalIconBasketComponent extends Component {
           </div>
         </div>
 
-        <div className='modalClose' onClick={ () => close() }>
+        <div className='modalClose' onClick={ () => { close() } }>
           <i className="small material-icons">clear</i>
         </div>
 

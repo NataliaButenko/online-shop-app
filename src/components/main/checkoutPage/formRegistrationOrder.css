@@ -1,54 +1,62 @@
-.checkout .input-field label {
-  color: black;
+/*.checkout .input-field label {*/
+  /*color: black;*/
+/*}*/
+
+/*input[type=text]:not(.browser-default):focus:not([readonly]) + label {*/
+  /*color: black;*/
+/*}*/
+
+/*input[type=text]:not(.browser-default):focus:not([readonly]) {*/
+  /*border-bottom: 1px solid #ee6e73;*/
+/*}*/
+
+/*.checkout .validate {*/
+  /*color: black;*/
+/*}*/
+
+/*input.valid[type=text]:not(.browser-default) {*/
+  /*box-shadow: none;*/
+  /*border-bottom: 1px solid #ee6e73;*/
+/*}*/
+
+/*[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {*/
+  /*background-color: #ee6e73;*/
+/*}*/
+/*[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {*/
+  /*border: 1px solid #d86264;*/
+/*}*/
+
+/*.checkout .payment-method label {*/
+  /*color: black;*/
+/*}*/
+
+/*.checkout .payment-method p {*/
+  /*font-weight: 600;*/
+  /*font-size: 20px;*/
+/*}*/
+
+/*input[type=email]:not(.browser-default):focus:not([readonly]) {*/
+  /*border-bottom: 1px solid #ee6e73;*/
+/*}*/
+
+/*input[type=email]:not(.browser-default):focus:not([readonly]) + label {*/
+  /*color: black;*/
+/*}*/
+
+/*input.valid[type=email]:not(.browser-default) {*/
+  /*box-shadow: none;*/
+  /*border-bottom: 1px solid #ee6e73;*/
+/*}*/
+
+/*input.valid[type=number]:not(.browser-default) {*/
+  /*border-bottom: 1px solid #ee6e73;*/
+  /*color: black;*/
+/*}*/
+
+.payment-method [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: #d86264;
 }
 
-input[type=text]:not(.browser-default):focus:not([readonly]) + label {
-  color: black;
-}
-
-input[type=text]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #ee6e73;
-}
-
-.checkout .validate {
-  color: black;
-}
-
-input.valid[type=text]:not(.browser-default) {
-  box-shadow: none;
-  border-bottom: 1px solid #ee6e73;
-}
-
-[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
-  background-color: #ee6e73;
-}
-[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
-  border: 1px solid #d86264;
-}
-
-.checkout .payment-method label {
-  color: black;
-}
-
-.checkout .payment-method p {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-input[type=email]:not(.browser-default):focus:not([readonly]) {
-  border-bottom: 1px solid #ee6e73;
-}
-
-input[type=email]:not(.browser-default):focus:not([readonly]) + label {
-  color: black;
-}
-
-input.valid[type=email]:not(.browser-default) {
-  box-shadow: none;
-  border-bottom: 1px solid #ee6e73;
-}
-
-input.valid[type=number]:not(.browser-default) {
-  border-bottom: 1px solid #ee6e73;
-  color: black;
+.payment-method [type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+  border: 2px solid #d86264;
 }

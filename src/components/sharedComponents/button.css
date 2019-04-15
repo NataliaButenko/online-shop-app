@@ -1,8 +1,8 @@
-.waves-effect.waves-light.btn-small.subscribe {
+.button {
   background-color: #ee6e73;
   max-width: 250px;
 }
 
-.waves-effect.waves-light.btn-small.subscribe:hover {
+.button:hover {
   background-color: #d86264;
 }

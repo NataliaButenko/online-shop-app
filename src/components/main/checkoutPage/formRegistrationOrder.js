@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from "../../sharedComponents/button";
+import { InputField } from "../../sharedComponents/inputField";
 
 export class FormRegistrationOrder extends Component {
   constructor() {
@@ -31,18 +32,30 @@ export class FormRegistrationOrder extends Component {
       <form className="col s12">
 
         <div className='row'>
-          <div className="input-field col s4">
-            <input id="last_name" type="text" className="validate" onChange={ this.onChange }/>
-            <label htmlFor="last_name">Last Name</label>
-          </div>
-          <div className="input-field col s4">
-            <input id="first_name" type="text" className="validate" onChange={ this.onChange }/>
-            <label htmlFor="first_name">First Name</label>
-          </div>
-          <div className="input-field col s4">
-            <input id="patronymic" type="text" className="validate" onChange={ this.onChange }/>
-            <label htmlFor="patronymic">Patronymic</label>
-          </div>
+          <InputField classNameDiv='col s4'
+                      id='last_name'
+                      type='text'
+                      labelText='Last Name'
+                      onChange={  this.onChange }
+                      labelColorText={ 'grey' }
+                      validateColotText={ 'grey' }
+          />
+          <InputField classNameDiv='col s4'
+                      id='first_name'
+                      type='text'
+                      labelText='First Name'
+                      onChange={  this.onChange }
+                      labelColorText={ 'grey' }
+                      validateColotText={ 'grey' }
+          />
+          <InputField classNameDiv='col s4'
+                      id='patronymic'
+                      type='text'
+                      labelText='Patronymic'
+                      onChange={  this.onChange }
+                      labelColorText={ 'grey' }
+                      validateColotText={ 'grey' }
+          />
         </div>
 
         <div className='row payment-method'>
@@ -67,28 +80,39 @@ export class FormRegistrationOrder extends Component {
 
         <div className='row email-address-department'>
           <div className='col s12 '>
-            <div className="input-field col s6 offset-s2">
-              <input id="email" type="email" className="validate" onChange={ this.onChange } />
-              <label htmlFor="email">Email</label>
-            </div>
-            <div className="input-field col s6 offset-s2">
-              <input id="address" type="text" className="validate" onChange={ this.onChange } />
-              <label htmlFor="address">
-                Full address (example: Ukraine, Kharkiv region, Kharkiv city, Nauchnaya street, 5, apartment 17, index 92100)
-              </label>
-            </div>
-            <div className="input-field col s6 offset-s2">
-              <input id="department" type="number" className="validate" onChange={ this.onChange } />
-              <label htmlFor="department">
-                Department number
-              </label>
-            </div>
-            <div className="input-field col s6 offset-s2">
-              <input id="phone_number" type="number" className="validate" onChange={ this.onChange } />
-              <label htmlFor="phone_number">
-                Phone number (example: +380999999999)
-              </label>
-            </div>
+            <InputField classNameDiv='col s6 offset-s2'
+                        id='email'
+                        type='email'
+                        labelText='Email'
+                        onChange={  this.onChange }
+                        labelColorText={ 'grey' }
+                        validateColotText={ 'grey' }
+            />
+            <InputField classNameDiv='col s6 offset-s2'
+                        id='address'
+                        type='text'
+                        labelText='Full address (example: Ukraine, Kharkiv region, Kharkiv city, Nauchnaya street, 5,
+                          apartment 17, index 92100)'
+                        onChange={  this.onChange }
+                        labelColorText={ 'grey' }
+                        validateColotText={ 'grey' }
+            />
+            <InputField classNameDiv='col s6 offset-s2'
+                        id='department'
+                        type='text'
+                        labelText='Department number'
+                        onChange={  this.onChange }
+                        labelColorText={ 'grey' }
+                        validateColotText={ 'grey' }
+            />
+            <InputField classNameDiv='col s6 offset-s2'
+                        id='phone_number'
+                        type='number'
+                        labelText='Phone number (example: +380999999999)'
+                        onChange={  this.onChange }
+                        labelColorText={ 'grey' }
+                        validateColotText={ 'grey' }
+            />
           </div>
         </div>
         <div className='row'>

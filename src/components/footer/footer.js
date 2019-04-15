@@ -22,12 +22,13 @@ export class Footer extends Component {
 
           <div className='row'>
             <InputField classNameDiv='s8 center-align offset-s2'
-                        classNameInput='validate'
-                        classNameLabel='white-text'
                         placeholder='Email'
                         id='email'
                         type='email'
-                        labelText='Subscribe to know about new products and promotions'/>
+                        labelText='Subscribe to know about new products and promotions'
+                        labelColorText={ 'white' }
+                        validateColotText={ 'white' }
+            />
             <div className='col s12 center-align'>
               <Button label='Subscribe'/>
             </div>

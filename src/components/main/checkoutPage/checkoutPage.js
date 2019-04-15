@@ -37,7 +37,6 @@ export class CheckoutPageComponent extends Component {
                                         increaseCounter={ increaseCounter }
                                         decreaseCounter={ decreaseCounter }
                 />
-
               )
             })
           }
