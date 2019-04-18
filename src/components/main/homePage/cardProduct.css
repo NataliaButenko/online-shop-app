@@ -44,3 +44,22 @@
 .main .card-image img {
   max-height: 300px;
 }
+
+.card-reveal i.right {
+  margin-left: 0px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+
+.card-reveal span.card-title {
+  cursor: auto !important;
+}
+
+.card-title-style {
+  height: 95px;
+  overflow: auto;
+  font-size: 20px;
+  font-weight: 600;
+}

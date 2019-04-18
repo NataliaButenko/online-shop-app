@@ -4,17 +4,26 @@ import { Button } from "../../sharedComponents/button";
 export class ModalSelectColor extends Component {
   constructor() {
     super();
-    this.state = { option: '' };
+    this.state = {
+      selectColor: '',
+      disabled: 'disabled'
+    };
   }
 
   handleRadioChange = (e) =>{
-    this.setState({ option: e.target.value });
+    this.setState({
+      selectColor: e.target.value ,
+      disabled: ''
+    });
   };
 
   addProductToBasket = ( product, selectColor ) => {
     const { addProductToBasket, close } = this.props;
     addProductToBasket(product, selectColor);
-    this.setState({ option: '' });
+    this.setState({
+      selectColor: '',
+      disabled: 'disabled'
+    });
     close();
   };
 
@@ -33,7 +42,7 @@ export class ModalSelectColor extends Component {
                      name='color'
                      id={ color.hex_value }
                      value={ color.hex_value }
-                     checked={ this.state.option === color.hex_value }
+                     checked={ this.state.selectColor === color.hex_value }
                      onChange={ this.handleRadioChange }
 
               />
@@ -66,9 +75,9 @@ export class ModalSelectColor extends Component {
                   label='Close'
                   onClick={ close }
           />
-          <Button className='right'
+          <Button className={ `right ${ this.state.disabled }` }
                   label='Next'
-                  onClick={ () => this.addProductToBasket(product, this.state.option) }
+                  onClick={ () => this.addProductToBasket(product, this.state.selectColor) }
           />
         </div>
       </div>
