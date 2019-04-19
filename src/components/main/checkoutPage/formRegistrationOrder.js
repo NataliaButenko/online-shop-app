@@ -25,6 +25,7 @@ export class FormRegistrationOrder extends Component {
   sendEndOrder = () => {
     const { selectedProductsList } = this.props;
     console.log(selectedProductsList);
+    console.log(this.state.userInfo);
   };
 
   render() {
@@ -60,11 +61,11 @@ export class FormRegistrationOrder extends Component {
 
         <div className='row payment-method'>
           <div className='col s12'>
-            <p>Select a Payment Method</p>
+            <p className='ggg'>Select a Payment Method</p>
             <div className='row'>
               <div className='col s12'>
                 <label>
-                  <input name="mail" type="radio" onChange={ this.onChange } value='uk mail'/>
+                  <input name="mail" type="radio" onChange={ this.onChange } value='uk mail' />
                   <span>uk mail</span>
                 </label>
               </div>
@@ -99,7 +100,7 @@ export class FormRegistrationOrder extends Component {
             />
             <InputField classNameDiv='col s6 offset-s2'
                         id='department'
-                        type='text'
+                        type='number'
                         labelText='Department number'
                         onChange={  this.onChange }
                         labelColorText={ 'grey' }

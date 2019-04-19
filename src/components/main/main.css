@@ -6,6 +6,7 @@
 @import "storesPage/stores.css";
 @import "jobs/jobs.css";
 @import "mapPage/map.css";
+@import "checkoutPage/checkoutPage.css";
 
 main .parallax-container {
   height: 700px;

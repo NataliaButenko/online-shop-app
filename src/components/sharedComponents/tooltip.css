@@ -1,0 +1,26 @@
+.tooltip {
+  min-height: 40px;
+  min-width: 140px;
+  background-color: #a9a9a9;
+  color: white;
+  position: absolute;
+  line-height: 24px;
+  padding: 7px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.hide {
+  display: none;
+}
+
+.tooltip_position-left {
+  right: 50px;
+  top: 15px;
+}
+
+.tooltip_position-right {
+  right: -120px;
+  top: 15px;
+}
+

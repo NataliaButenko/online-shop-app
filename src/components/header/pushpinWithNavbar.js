@@ -1,20 +1,28 @@
 import React, { Component } from 'react';
 import { InputField } from "../sharedComponents/inputField";
 import { ModalIconBasket } from "../modalsIcons/modalIconBasket/modalIconBasket";
+import { Tooltip } from "../sharedComponents/tooltip";
 
 export class PushpinWithNavbar extends Component {
   constructor() {
     super();
     this.state = {
-      showModal: false
+      showModal: false,
+      showTooltip: 'hide'
     }
   }
 
   showModal = (e) => {
     e.preventDefault();
+    if(this.props.basket.length === 0) {
+      this.setState({
+        showTooltip: ''
+      });
+    }
     this.setState({
       showModal: !this.state.showModal
     });
+    setTimeout(() => this.setState({showTooltip: 'hide'}), 2000);
   };
 
   closeModal = () => {
@@ -52,9 +60,10 @@ export class PushpinWithNavbar extends Component {
                           validateColotText={ 'white' }
               />
 
-              <div className='right nav-item ' onClick={ this.showModal }>
+              <div className='right nav-item' onClick={ this.showModal }>
                 <a href="" ><i className="large material-icons">add_shopping_cart</i></a>
                 { this.props.displaySelectedItem() }
+                <Tooltip tooltipPosition='left' tooltipText='empty basket' hide={ this.state.showTooltip }/>
               </div>
             </div>
 

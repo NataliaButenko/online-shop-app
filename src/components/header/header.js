@@ -6,6 +6,7 @@ import { search } from "../../store/actions/productsAction/searchProducts";
 import { productFilter } from "../../selectors/productsFilter";
 import { NavbarTop } from "./navbarTop";
 import { PushpinWithNavbar } from "./pushpinWithNavbar";
+import { Tooltip } from "../sharedComponents/tooltip";
 
 const navbar = {
   navbarProducts:
@@ -35,6 +36,20 @@ export class HeaderComponent extends Component {
       });
     });
   }
+
+  // showTooltip = () => {
+  //   console.log(this.props);
+  //   if(this.props.basket.length === 0) {
+  //     let tmp = <Tooltip tooltipPosition='left' tooltipText='empty basket' />;
+  //     setTimeout(function(){
+  //       console.log('rrrr');
+  //       return false;
+  //     }, 2000);
+  //     return true
+  //   } else {
+  //     return false
+  //   }
+  // };
 
   displayProductsByType = (str) => {
    const { changeProductListAsync } = this.props;
@@ -93,6 +108,7 @@ export class HeaderComponent extends Component {
                             displayProductsByType={ this.displayProductsByType }
                             displaySelectedItem={ this.displaySelectedItem }
                             search={ this.search }
+                            basket={ this.props.basket }
          />
        </div>
 
