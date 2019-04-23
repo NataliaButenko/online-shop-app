@@ -38,3 +38,8 @@
   color: black;
   cursor: pointer;
 }
+
+.horizontal .card-content {
+  max-height: 200px;
+  overflow: auto;
+}

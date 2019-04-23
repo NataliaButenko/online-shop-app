@@ -15,7 +15,6 @@ export class HomePageComponent extends Component {
   }
 
   addProductToBasket = (product) => {
-    //console.log(product);
     const { addProductToBasket } = this.props;
     if(product.product_colors.length === 0) {
       addProductToBasket(product);

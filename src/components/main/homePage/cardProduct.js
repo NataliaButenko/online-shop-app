@@ -1,9 +1,29 @@
 import React, { Component } from 'react';
+import { Tooltip } from "../../sharedComponents/tooltip";
 
 export class CardProduct extends Component {
+  constructor() {
+    super();
+    this.state = {
+      showTooltip: 'hide'
+    }
+  }
+
+  addProductToBasket = () => {
+    const { product, addProductToBasket } = this.props;
+    if(product.price === '0.0' || product.price === null ) {
+      this.setState({
+        showTooltip: ''
+      });
+      setTimeout(() => this.setState({showTooltip: 'hide'}), 2000);
+    } else {
+      addProductToBasket(product);
+    }
+  };
 
   render() {
-    const { product, addProductToBasket } = this.props;
+    const { product } = this.props;
+
     return(
       <div className="card main">
 
@@ -39,8 +59,9 @@ export class CardProduct extends Component {
           <p>{ product.description }</p>
         </div>
 
-        <div className="card-action" onClick={ () => { addProductToBasket(product) } }>
+        <div className="card-action" onClick={ this.addProductToBasket }>
           <span>Add to Cart</span>
+          <Tooltip tooltipPosition='right' tooltipText='not available' hide={ this.state.showTooltip } />
         </div>
 
       </div>
